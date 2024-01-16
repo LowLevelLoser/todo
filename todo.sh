@@ -1,6 +1,6 @@
 #!/bin/sh
 
-TODO_FILE="$HOME/scriptz/todo.txt" #change this path to where wou will keep the todo file
+TODO_FILE="$HOME/scriptz/todo.txt" #change this path to where you want the todo file
 
 while getopts "a:r:d:c:h" opt; do
   case $opt in
