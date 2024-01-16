@@ -2,7 +2,7 @@
 
 TODO_FILE="$HOME/scriptz/todo.txt" #change this path to where you want the todo file
 
-while getopts "a:r:d:c:h" opt; do
+while getopts "a:r:d:ch" opt; do
   case $opt in
     a)
       echo "$OPTARG" >> "$TODO_FILE"
@@ -17,7 +17,8 @@ while getopts "a:r:d:c:h" opt; do
       echo "Marked item at line $OPTARG as done"
       ;;
     c)
-      echo -n > todo.txt
+      > "$TODO_FILE"
+      echo "Cleared the todo list"
       ;;
     h)
       echo "Usage:"
