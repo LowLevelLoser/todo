@@ -22,7 +22,7 @@ while getopts "a:r:d:ch" opt; do
       ;;
     h)
       echo "Usage:"
-      echo "  -a <task>: Add a new task"
+      echo "  -a <task>: Add a new task (must be in quotes)"
       echo "  -r <number>: Remove task at the specified line number"
       echo "  -d <number>: Mark task at the specified line number as done"
       echo "  -c: Clear todo list"
